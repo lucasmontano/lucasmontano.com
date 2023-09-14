@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Lucas Montano</title>
+  <meta charset="UTF-8">
+  <title>Lucas Montano</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    <h1>Lucas Montano's Social Networks</h1>
-    <ul>
-        <li><a href="https://twitter.com/lucas_montano" target="_blank">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/lucasmontano/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/lucasmontano" target="_blank">GitHub</a></li>
-        <li><a href="https://www.youtube.com/c/LucasMontano" target="_blank">YouTube</a></li>
-        <li><a href="https://www.instagram.com/lucasmontano/" target="_blank">Instagram</a></li>
-    </ul>
+
+  <div class="container" id="content">
+  </div>
+
+  <script>
+    // bah tu é dos mais curioso neh...
+    fetch('https://api.github.com/repos/lucasmontano/lucasmontano.com/readme')
+      .then(response => response.json())
+      .then(data => {    
+        const readmeBase64 = data.content;
+        const readmeContent = atob(readmeBase64);        
+        const readmeHtml = marked(readmeContent);    
+        document.getElementById('content').innerHTML = readmeHtml;
+      });
+  </script>
+
 </body>
 </html>
