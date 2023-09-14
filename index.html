@@ -3,24 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Lucas Montano</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js"></script>
 </head>
 <body>
-
-  <div class="container" id="content">
-  </div>
-
   <script>
-    // bah tu é dos mais curioso neh...
-    fetch('https://api.github.com/repos/lucasmontano/lucasmontano.com/readme')
-      .then(response => response.json())
-      .then(data => {    
-        const readmeBase64 = data.content;
-        const readmeContent = atob(readmeBase64);        
-        const readmeHtml = marked(readmeContent);    
-        document.getElementById('content').innerHTML = readmeHtml;
-      });
+    // bah tu é dos mais curioso neh... e rapido!
+    window.location.href = "https://github.com/lucasmontano/lucasmontano.com/blob/main/README.md";
   </script>
-
 </body>
 </html>
