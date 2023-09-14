@@ -9,8 +9,8 @@ let a=1,b=1;const c=()=>{alert(atob('THVjYXMgTW9udGFubw=='));[a,b]=[b,a+b];setTi
 se tu quer encontrar o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
 
 ## Redes
-[Twitter](https://twitter.com/lucas_montano) é o proxy do meu cerebro, quase tudo passa por lá (com pouco filtro);
-[Youtube](https://www.youtube.com/lucasmontano) se quiser almoçar assistindo um video meu;
+[Twitter](https://twitter.com/lucas_montano) o proxy do meu cerebro, quase tudo passa por lá (com pouco filtro);
+[Youtube](https://www.youtube.com/lucasmontano) se quiser almocar assistindo um video meu;
 [Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories;
 
 ## Membros
