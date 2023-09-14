@@ -80,23 +80,15 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       if (typeof marked === "function") {
-        fetch('https://api.github.com/repos/lucasmontano/lucasmontano.com/readme')
-          .then(response => response.json())
+        fetch('https://raw.githubusercontent.com/lucasmontano/lucasmontano.com/main/README.md')
+          .then(response => response.text())
           .then(data => {
-            const readmeBase64 = data.content;
-            const binaryString = atob(readmeBase64);
-            const len = binaryString.length;
-            const bytes = new Uint8Array(len);
-            for (let i = 0; i < len; i++) {
-              bytes[i] = binaryString.charCodeAt(i);
-            }
-            const text = new TextDecoder('utf-8').decode(bytes);
-            const readmeHtml = marked(text);
+            const readmeHtml = marked(data);
             const container = document.getElementById('content');
             container.innerHTML = readmeHtml;
             Prism.highlightAllUnder(container);
           })
-          .catch(error => console.error("Algo deu errado:", error));
+          .catch(error => console.error("Oops:", error));
       }
     });
   </script>
