@@ -10,7 +10,9 @@ se tu quer encontrar o lugar certo para quem quer Desenvolver Aplicativos eu rec
 
 ## Redes
 [Twitter](https://twitter.com/lucas_montano) o proxy do meu cerebro, quase tudo passa por la (com pouco filtro);
+
 [Youtube](https://www.youtube.com/lucasmontano) se quiser almocar assistindo um video meu;
+
 [Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories;
 
 ## Membros
@@ -39,4 +41,4 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 - Cartas de um Estoico: https://amzn.to/2yVQkOY **<-- VAI MUDAR TUA VIDA**
 
 ### Filipe Deschamps
-se tu ja ta pensando em comprar o curso do ​⁠@FilipeDeschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
+se tu ja ta pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
