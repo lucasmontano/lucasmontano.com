@@ -2,11 +2,11 @@
 printf("sim essa pagina foi desenvolvida com muito amor")
 ```
 tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela;
+
 esse site parece um site de DEV backend mas na verdade eu trabalho como Senior Android Engineer na Disney;
 
 ## Tenha aulas comigo
-no canal do Youtube eu tenho a turma de membros que recebe acesso a aulas minhas sobre algoritmos, estrutura de dados, POO e mais;
-[torne-se membro para obter acesso](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
+no canal do Youtube eu tenho a turma de membros que recebe acesso a aulas minhas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
 
 se tu quer encontrar o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
 
