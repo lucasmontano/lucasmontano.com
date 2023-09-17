@@ -29,7 +29,7 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 - [Cartas de um Estoico](https://amzn.to/2yVQkOY)
 
 ### Filipe Deschamps
-se tu ja ta pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
+se tu ja estava pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
 
 
 ## Redes
