@@ -1,7 +1,4 @@
-```kotlin
-printf("sim essa pagina foi desenvolvida com muito amor")
-```
-tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela;
+### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
 
 esse site parece um site de DEV backend mas na verdade eu trabalho como Senior Android Engineer na Disney;
 
@@ -41,3 +38,10 @@ se tu ja ta pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [
 [Youtube](https://www.youtube.com/lucasmontano) se quiser almocar assistindo um video meu;
 
 [Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories;
+
+```kotlin
+printf("sim essa pagina foi desenvolvida com muito amor")
+```
+
+tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela;
+
