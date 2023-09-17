@@ -2,12 +2,12 @@
 
 esse site parece um site de DEV backend mas na verdade eu trabalho como Senior Android Engineer na Disney;
 
-## Tenha aulas comigo
-no canal do Youtube eu tenho a turma de membros que recebe acesso a aulas minhas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
+## Quer ter aula comigo?
+no Youtube temos a turma de membros que recebe acesso a video aulas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
 
-se tu quer encontrar o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
+se tu tá procurando o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
 
-## Links Afiliados
+## Procurando indicações?
 
 tudo que tu encontrar de link aqui embaixo eu ganho algo de alguma forma se tu clicar;
 eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apoiar o canal;
