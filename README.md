@@ -16,17 +16,17 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 - [Kindle](https://www.amazon.com.br/gp/search?ie=UTF8&tag=lucasmontan05-20&linkCode=ur2&linkId=a96949b7784d7908d8d65a2190ece81c&camp=1789&creative=9325&index=digital-text&keywords=Kindle)
 - [Cracking the code interview](https://amzn.to/2n24ID3) **<-- MUITO BOM**
 - [14 Hábitos de Desenvolvedores Altamente Produtivos](https://amzn.to/30b0DvM)
-- [Entendendo Algoritmos](https://amzn.to/2Wt9qIE) **<-- MUITO BOM**
+- [Entendendo Algoritmos](https://amzn.to/2Wt9qIE)
 - [Clean Code](https://www.amazon.com.br/gp/search?ie=UTF8&tag=lucasmontan05-20&linkCode=ur2&linkId=88e99d99abfb9cf66c8327fcfae4acf7&camp=1789&creative=9325&index=books&keywords=CleanCode)
 - [Head First Design Patterns](https://www.amazon.com.br/gp/search?ie=UTF8&tag=lucasmontan05-20&linkCode=ur2&linkId=baab0e1781e2591add7e78a2a18a99c2&camp=1789&creative=9325&index=books&keywords=HeadFirstDesignPatterns)
-- [The Dip - quando tu deve desistir](https://amzn.to/2lbB2lQ) **<-- MUITO BOM**
+- [The Dip - quando tu deve desistir](https://amzn.to/2lbB2lQ)
 - [Startup de $100](https://amzn.to/2H4DORR)
 - [De Zero a Um by Peter Thiel](https://amzn.to/2Z2N9Un)
 - [Lean Startup](https://amzn.to/2Kwvc8G)
 - [Principles by Ray Dalio](https://amzn.to/2YXug5j)
 - [On Tyranny by Tim Duggan](https://amzn.to/33uMCKe)
 - [A arte da guerra](https://amzn.to/31ALLpv)
-- [Cartas de um Estoico](https://amzn.to/2yVQkOY) **<-- VAI MUDAR TUA VIDA**
+- [Cartas de um Estoico](https://amzn.to/2yVQkOY)
 
 ### Filipe Deschamps
 se tu ja ta pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
