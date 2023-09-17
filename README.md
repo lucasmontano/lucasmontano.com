@@ -1,23 +1,14 @@
-## Welcome
-sim essa pagina foi desenvolvida com muito amor e tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela;
+```kotlin
+printf("sim essa pagina foi desenvolvida com muito amor")
+```
+tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela;
 esse site parece um site de DEV backend mas na verdade eu trabalho como Senior Android Engineer na Disney;
 
-```javascript
-let a=1,b=1;const c=()=>{alert(atob('THVjYXMgTW9udGFubw=='));[a,b]=[b,a+b];setTimeout(c,a*6e4)};setTimeout(c,a*6e4);
-```
-
-se tu quer encontrar o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
-
-## Redes
-[Twitter](https://twitter.com/lucas_montano) o proxy do meu cerebro, quase tudo passa por la (com pouco filtro);
-
-[Youtube](https://www.youtube.com/lucasmontano) se quiser almocar assistindo um video meu;
-
-[Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories;
-
-## Membros
+## Tenha aulas comigo
 no canal do Youtube eu tenho a turma de membros que recebe acesso a aulas minhas sobre algoritmos, estrutura de dados, POO e mais;
 [torne-se membro para obter acesso](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
+
+se tu quer encontrar o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
 
 ## Links Afiliados
 
@@ -42,3 +33,11 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 
 ### Filipe Deschamps
 se tu ja ta pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
+
+
+## Redes
+[Twitter](https://twitter.com/lucas_montano) o proxy do meu cerebro, quase tudo passa por la (com pouco filtro);
+
+[Youtube](https://www.youtube.com/lucasmontano) se quiser almocar assistindo um video meu;
+
+[Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories;
