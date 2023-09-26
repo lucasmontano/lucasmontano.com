@@ -1,18 +1,27 @@
-### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
+<div style="display: flex;  align-items: center; gap: 1rem;">
+    <img src="https://github.com/lucasmontano.png" alt="" height="40"   style="border-radius: 50%" data-cursor="block" />
+    <h2 data-cursor="block" data-cursor-style="durationBase: 900">
+        Sou eu Lucas Montano! 👋
+    </h2>
+</div>
 
-esse site parece um site de DEV backend mas na verdade eu trabalho como Senior Android Engineer na Disney;
+#### Do canal Lucas Montano!
+
+Esse site parece um site de DEV backend mas na verdade eu trabalho como Senior Android Engineer na Disney;
 
 ## Quer ter aula comigo?
-no Youtube temos a turma de membros que recebe acesso a video aulas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
 
-se tu tá procurando o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
+No Youtube temos a turma de membros que recebe acesso a video aulas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
+
+Se tu tá procurando o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
 
 ## Procurando indicações?
 
-tudo que tu encontrar de link aqui embaixo eu ganho algo de alguma forma se tu clicar;
+Tudo que tu encontrar de link aqui embaixo eu ganho algo de alguma forma se tu clicar;
 eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apoiar o canal;
 
 ### Livros
+
 - [Kindle](https://www.amazon.com.br/gp/search?ie=UTF8&tag=lucasmontan05-20&linkCode=ur2&linkId=a96949b7784d7908d8d65a2190ece81c&camp=1789&creative=9325&index=digital-text&keywords=Kindle)
 - [Cracking the code interview](https://amzn.to/2n24ID3)
 - [14 Hábitos de Desenvolvedores Altamente Produtivos](https://amzn.to/30b0DvM)
@@ -29,19 +38,19 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 - [Cartas de um Estoico](https://amzn.to/2yVQkOY)
 
 ### Filipe Deschamps
-se tu ja estava pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
 
+Se tu ja estava pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal.
 
 ## Redes
+
 [Twitter](https://twitter.com/lucas_montano) o proxy do meu cerebro, quase tudo passa por la (com pouco filtro);
 
 [Youtube](https://www.youtube.com/lucasmontano) se quiser almocar assistindo um video meu;
 
-[Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories;
+[Instagram](https://instagram.com/lucasmontano/) compartilho mais da minha vida pessoal nos Stories.
 
 ```kotlin
 printf("sim essa pagina foi desenvolvida com muito amor")
 ```
 
-tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela;
-
+Tu pode deixar um LIKE clicando na estrelinha do [repo](https://github.com/lucasmontano/lucasmontano.com/) dela.
