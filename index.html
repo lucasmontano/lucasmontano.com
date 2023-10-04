@@ -1,13 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Lucas Montano</title>
-</head>
-<body>
+  <script src="https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #0D1117;
+      color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      margin: 0;
+      padding: 0;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      body {
+        font-size: 2rem;
+      }
+    }
+
+    .container {
+      background-color: #161B22;
+      margin: 5% auto;
+      padding: 40px;
+      border-radius: 8px;
+      width: 80%;
+      overflow-y: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #FFFFFF;
+      margin-bottom: 0.5em;
+    }
+
+    p,
+    ol,
+    ul {
+      margin-bottom: 1em;
+      color: #C9D1D9;
+    }
+
+    code {
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 2px 6px;
+      color: #FFFFFF;
+      font-size: 1.5rem;
+    }
+
+    pre {
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 10px;
+      color: #8b949e;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    blockquote {
+      border-left: 4px solid #30363d;
+      padding-left: 15px;
+      color: #c9d1d9;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .animate-clickme {
+      /* Add your animation properties here */
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    }
+
+    @keyframes shake {
+
+      /* Add keyframes for the animation */
+      10%,
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%,
+      80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%,
+      50%,
+      70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%,
+      60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+
+      50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+
+      70% {
+        transform: scale(0.95);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
   <script>
-    // bah tu é dos mais curioso neh... e rapido!
-    window.location.href = "https://github.com/lucasmontano/lucasmontano.com/blob/main/README.md";
+    function redirectToLucasMontano() {
+      const links = [
+        '/watch?v=ZbhcFLqt5wI',
+        '/watch?v=jouOvuRkOjY',
+        '/watch?v=yz3BcL5oQ70',
+        '/watch?v=EQf1UtuDi9o',
+        '/watch?v=A1NjONzcHrY',
+        '/watch?v=eJZV5W4_gkY',
+        '/watch?v=g45qrU297cg',
+        '/watch?v=NttrF2T4BSA',
+        '/watch?v=V9B6FMRs0ck',
+        '/watch?v=wRzvI8xWC9s',
+        '/watch?v=G5EPi8DQahI',
+        '/watch?v=fiFcC54aMaA',
+        '/watch?v=KXCNH9Wj6Fg',
+        '/watch?v=ijnJg0Za2UY',
+        '/watch?v=JB5trigCSVE',
+        '/watch?v=ANeEikfX5go',
+        '/watch?v=BO7QW5-etZ4',
+        '/watch?v=OILOgpjsY-Q',
+        '/watch?v=_tAy-NNkHuo',
+        '/watch?v=Is0GVsNfDHo',
+        '/watch?v=Oz21sD9nrHk',
+        '/watch?v=fyXfFnHnl1Y',
+        '/watch?v=odMkcZ_t4PY',
+        '/watch?v=teU_RL7QOT4',
+        '/watch?v=NnekO9pdJaw',
+        '/watch?v=5jPam2LV0ME',
+        '/watch?v=e4x4IITQvak',
+        '/watch?v=arG8jkRHwsY',
+        '/watch?v=Y2WfzFozf8M',
+        '/watch?v=15fBdpMWPrE'
+      ];
+
+      const randomIndex = Math.floor(Math.random() * links.length);
+      const randomLink = links[randomIndex];
+      window.open('https://www.youtube.com' + randomLink, '_blank');
+    }      
   </script>
+</head>
+
+<body>
+  <div class="container" id="content"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof marked === "function") {
+        fetch('https://raw.githubusercontent.com/lucasmontano/lucasmontano.com/main/README.md')
+          .then(response => response.text())
+          .then(data => {
+            const readmeHtml = marked(data);
+            const container = document.getElementById('content');
+            container.innerHTML = readmeHtml;
+            Prism.highlightAllUnder(container);
+          })
+          .catch(error => console.error("Oops:", error));
+      }
+    });
+    window.addEventListener("scroll", function () {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        document.getElementById("clickme").style.display = "block";
+        document.getElementById("clickme").classList.add("animate-clickme");
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      const clickmeImage = document.getElementById("clickme");
+      clickmeImage.addEventListener("click", redirectToLucasMontano);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
+
+  <img id="clickme" src="clickme.png"
+    style="display:none;cursor:pointer;position:fixed;bottom:0px;right:0px;width:100px;height:100px;z-index:999;" />
 </body>
+
 </html>
