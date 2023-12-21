@@ -31,6 +31,10 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 ### Filipe Deschamps
 se tu ja estava pensando em comprar o curso do ​⁠Filipe Deschamps tu pode usar [esse link](https://go.hotmart.com/N85311804K) pra apoiar o canal;
 
+### TRABALHA REMOTO PARA OS 🇺🇸?
+Recomendo utilizar a Higlobe para receber de clientes americanos. Eles possuem o menor custo total do mercado, apenas 0.5% em retiradas via PIX (maioria cobra de 1.5%-2.5%).
+
+Receba um bonus de $50 USD na primeira transferência usando a Higlobe! Se tu se cadastrar com o link: https://bit.ly/higlobe-montano-12-23
 
 ## Redes
 [Twitter](https://twitter.com/lucas_montano) o proxy do meu cerebro, quase tudo passa por la (com pouco filtro);
