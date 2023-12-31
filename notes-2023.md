@@ -1,4 +1,4 @@
-*Reflexões sobre o Futuro do Desenvolvimento de Software*
+**Reflexões sobre o Futuro do Desenvolvimento de Software**
 
 No dinâmico mundo do desenvolvimento de software, a constante presença de um backlog em empresas é um fenômeno universal. 
 
