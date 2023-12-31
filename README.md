@@ -1,7 +1,7 @@
 ### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
 
 ## Notas de 2023
-Como foi 2023 aos meus olhos e o que espero para 2024, [leia mais](https://github.com/notes-2023.md).
+Como foi 2023 aos meus olhos e o que espero para 2024, [leia mais](https://github.com/lucasmontano/lucasmontano.com/blob/main/notes-2023.md).
 
 ## Quer ter aula comigo?
 no Youtube temos a turma de membros que recebe acesso a video aulas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
