@@ -25,7 +25,7 @@ eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apo
 
 Abaixo uma lista de livros que eu li durante a vida, eu recomendo comprar um [Kindle](https://www.amazon.com.br/gp/search?ie=UTF8&tag=lucasmontan05-20&linkCode=ur2&linkId=a96949b7784d7908d8d65a2190ece81c&camp=1789&creative=9325&index=digital-text&keywords=Kindle) foi uma das melhores compras que já fiz.
   
-- Cracking the code interview](https://amzn.to/2n24ID3)
+- [Cracking the code interview](https://amzn.to/2n24ID3)
 - [14 Hábitos de Desenvolvedores Altamente Produtivos](https://amzn.to/30b0DvM)
 - [Entendendo Algoritmos](https://amzn.to/2Wt9qIE)
 - [Clean Code](https://www.amazon.com.br/gp/search?ie=UTF8&tag=lucasmontan05-20&linkCode=ur2&linkId=88e99d99abfb9cf66c8327fcfae4acf7&camp=1789&creative=9325&index=books&keywords=CleanCode)
