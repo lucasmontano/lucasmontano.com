@@ -1,7 +1,5 @@
 ### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
 
-[Draft] Como foi 2023 aos meus olhos e o que espero para 2024, [leia mais](https://github.com/lucasmontano/lucasmontano.com/blob/main/notes-2023.md).
-
 ## Quer ter aula comigo?
 no Youtube temos a turma de membros que recebe acesso a video aulas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
 
@@ -11,6 +9,8 @@ se tu tá procurando o lugar certo para quem quer Desenvolver Aplicativos eu rec
 
 tudo que tu encontrar de link aqui embaixo eu ganho algo de alguma forma se tu clicar;
 eu recomendo apenas comprar se tu estava pensando em fazer isso mesmo e quer apoiar o canal;
+
+## Livros Recomendados
 
 ### Livros que vou ler em 2024
 
