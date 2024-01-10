@@ -1,5 +1,8 @@
 ### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
 
+## Quer mandar sugestão de artigos e tópicos? 
+Manda direto pro [Tony](https://chat.openai.com/g/g-IaNiHmwSC-the-tony) que nós vamos selecionar os melhores para gravar o próximo video.
+
 ## Quer ter aula comigo?
 no Youtube temos a turma de membros que recebe acesso a video aulas sobre algoritmos, estrutura de dados, POO e mais. torne-se membro para obter acesso clicando [aqui](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg/join);
 
