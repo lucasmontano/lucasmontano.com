@@ -1,6 +1,8 @@
 # AJUDA - RS
 [Centralizando informações para ajuda e alivio da enchente](https://bento.me/ajudars?s=08)
 
+Tu também pode doar por pix para https://livepix.gg/montano que estamos repassando para ações de linha de frente. 
+
 ### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
 
 ## Quer mandar sugestão de artigos e tópicos? 
