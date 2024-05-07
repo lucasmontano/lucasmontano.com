@@ -1,6 +1,7 @@
 # AJUDA - RS
 - [Centralizando informações para ajuda e alivio da enchente](https://bento.me/ajudars?s=08)
 - [SOS Rio Grande do Sul](https://www.sos-rs.com/)
+- [A Maior Campanha Solidária do RS](https://www.vakinha.com.br/4712837)
 - Tu também pode doar por pix para https://livepix.gg/montano repassados para ações de linha de frente. 
 
 ### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
