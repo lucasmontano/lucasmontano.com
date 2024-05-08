@@ -1,11 +1,7 @@
 # AJUDA - RS
 
-- Lista de necessidades em abrigos [SOS Rio Grande do Sul](https://www.sos-rs.com/)
-- A Maior Campanha Solidária do RS [Vakinha](https://www.vakinha.com.br/4712837)
-- @institutorazoes - Flow Podcast [Voaa](https://voaa.me/urgente-rio-grande-sul)
-- PIX da Fresno: `AJUDA@FRESNOROCK.COM.BR`
-- Comunidade APOIA.se e a Cozinha Solidária do MTST [Apoia.se](https://apoia.se/enchentesrs)
 - Tu pode doar por LIVE PIX que repassamos para ações de linha de frente: https://livepix.gg/montano
+- Lista de necessidades em abrigos [SOS Rio Grande do Sul](https://www.sos-rs.com/)
 - [Centralizando informações para ajuda e alivio da enchente](https://bento.me/ajudars?s=08)
 
 
