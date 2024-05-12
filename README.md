@@ -1,8 +1,8 @@
-# AJUDA - RS
+# AJUDA - RS 🧉 
 
-- Tu pode doar por LIVE PIX que repassamos para ações de linha de frente: https://livepix.gg/montano
-- Lista de necessidades em abrigos [SOS Rio Grande do Sul](https://www.sos-rs.com/)
-- [Centralizando informações para ajuda e alivio da enchente](https://bento.me/ajudars?s=08)
+- Tu ajudar nas ações de linha de frente doando por [LIVE PIX](https://livepix.gg/montano) e acompanhar o repasse na nossa [planilha](https://docs.google.com/spreadsheets/d/1q4En143UD8Q7A-RbOigF9kZ-4_ITs7dmIC2bBn2-AXg/edit?usp=sharing)
+- Se quiser doar ou levar itens para abrigos, acompanhe a lista de necessidades em [SOS Rio Grande do Sul](https://www.sos-rs.com/)
+- Existe uma iniciativa para centralizar informações para ajuda e alivio da enchente que pode ser acessado [aqui](https://bento.me/ajudars?s=08)
 
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
