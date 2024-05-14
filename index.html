@@ -79,60 +79,84 @@
       text-decoration: underline;
     }
 
-    .animate-clickme {
-      /* Add your animation properties here */
-      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    .videos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    @keyframes shake {
+    .video {
+      cursor: pointer;
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 320px;
+    }
 
-      /* Add keyframes for the animation */
-      10%,
-      90% {
-        transform: translate3d(-1px, 0, 0);
-      }
+    .video img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-      20%,
-      80% {
-        transform: translate3d(2px, 0, 0);
-      }
+    .video-title {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 4px 8px;
+      font-size: 14px;
+      max-width: calc(100% - 16px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
-      30%,
-      50%,
-      70% {
-        transform: translate3d(-4px, 0, 0);
-      }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background: url('play-button.png') no-repeat center center;
+      background-size: contain;
+    }
 
-      40%,
-      60% {
-        transform: translate3d(4px, 0, 0);
+    @media (min-width: 1024px) {
+      .videos-container {
+        justify-content: space-between;
       }
     }
 
-    @keyframes bounceIn {
-      0% {
-        transform: scale(0.3);
-        opacity: 0;
+    @media (max-width: 1023px) {
+      .videos-container {
+        flex-direction: column;
+        align-items: center;
       }
+    }
 
-      50% {
-        transform: scale(1.05);
-        opacity: 0.9;
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .video {
+        max-width: 45%;
       }
+    }
 
-      70% {
-        transform: scale(0.95);
-        opacity: 0.9;
-      }
-
-      100% {
-        transform: scale(1);
-        opacity: 1;
+    @media (max-width: 767px) {
+      .video {
+        max-width: 90%;
       }
     }
   </style>
   <script>
-    function redirectToLucasMontano() {
+    function redirectToLucasMontano(url) {
+      window.open(url, '_blank');
+    }
+
+    function loadVideos() {
       const links = [
         '/watch?v=ZbhcFLqt5wI',
         '/watch?v=jouOvuRkOjY',
@@ -166,15 +190,30 @@
         '/watch?v=15fBdpMWPrE'
       ];
 
-      const randomIndex = Math.floor(Math.random() * links.length);
-      const randomLink = links[randomIndex];
-      window.open('https://www.youtube.com' + randomLink, '_blank');
-    }      
+      const videosContainer = document.querySelector('.videos-container');
+      const selectedLinks = links.sort(() => 0.5 - Math.random()).slice(0, 9); // Select 9 random videos
+
+      selectedLinks.forEach(link => {
+        const videoUrl = `https://www.youtube.com${link}`;
+        const videoElement = document.createElement('div');
+        videoElement.classList.add('video');
+        videoElement.innerHTML = `
+          <img src="https://img.youtube.com/vi/${link.split('=')[1]}/maxresdefault.jpg" alt="Video Thumbnail" loading="lazy">
+          <div class="play-button"></div>
+          <div class="video-title">Video Title</div>
+        `;
+        videoElement.addEventListener('click', () => redirectToLucasMontano(videoUrl));
+        videosContainer.appendChild(videoElement);
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", loadVideos);
   </script>
 </head>
 
 <body>
   <div class="container" id="content"></div>
+  <div class="videos-container"></div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       if (typeof marked === "function") {
