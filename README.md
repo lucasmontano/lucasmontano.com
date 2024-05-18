@@ -17,6 +17,9 @@ no Youtube temos a turma de membros que recebe acesso a video aulas sobre algori
 
 se tu tá procurando o lugar certo para quem quer Desenvolver Aplicativos eu recomendo se inscrever [aqui](https://webinar.appacademy.dev/free);
 
+## Comunidade do Discord
+https://discord.gg/5uV96SVF
+
 ## Procurando indicações?
 
 tudo que tu encontrar de link aqui embaixo eu ganho algo de alguma forma se tu clicar;
