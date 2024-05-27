@@ -1,6 +1,6 @@
 # AJUDA - RS 🧉 
 
-- Tu pode ajudar nas ações de linha de frente doando por [LIVE PIX](https://livepix.gg/montano) e acompanhar o repasse na nossa [planilha](https://bit.ly/montano-ajuda-rs-planilha)
+- Prestação de contas das doações nessa [planilha](https://bit.ly/montano-ajuda-rs-planilha)
 - Se quiser doar ou levar itens para abrigos, acompanhe a lista de necessidades em [SOS Rio Grande do Sul](https://www.sos-rs.com/)
 - Existe uma iniciativa para centralizar informações para ajuda e alivio da enchente que pode ser acessado [aqui](https://bento.me/ajudars?s=08)
 
