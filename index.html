@@ -125,7 +125,7 @@
       background: url('play-button.png') no-repeat center center;
       background-size: contain;
     }
-
+    
     @media (min-width: 1024px) {
       .videos-container {
         justify-content: space-between;
@@ -236,7 +236,7 @@
     });
     document.addEventListener("DOMContentLoaded", function () {
       const clickmeImage = document.getElementById("clickme");
-      clickmeImage.addEventListener("click", redirectToLucasMontano);
+      clickmeImage.addEventListener("click", () => redirectToLucasMontano("https://www.youtube.com/@LucasMontano"));
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
