@@ -1,12 +1,3 @@
-# AJUDA - RS 🧉 
-
-- Prestação de contas das doações nessa [planilha](https://bit.ly/montano-ajuda-rs-planilha)
-- Se quiser doar ou levar itens para abrigos, acompanhe a lista de necessidades em [SOS Rio Grande do Sul](https://www.sos-rs.com/)
-- Existe uma iniciativa para centralizar informações para ajuda e alivio da enchente que pode ser acessado [aqui](https://bento.me/ajudars?s=08)
-
-
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
 ### Hey, Lucas Montano do canal Lucas Montano aqui! 👋
 
 ## Quer mandar sugestão de artigos e tópicos? 
