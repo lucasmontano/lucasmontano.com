@@ -82,141 +82,16 @@
       text-decoration: underline;
     }
 
-    .videos-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .video {
-      cursor: pointer;
-      position: relative;
-      display: block;
-      width: 100%;
-      max-width: 320px;
-    }
-
-    .video img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .video-title {
-      position: absolute;
-      bottom: 8px;
-      left: 8px;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 4px 8px;
-      font-size: 14px;
-      max-width: calc(100% - 16px);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .play-button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 64px;
-      height: 64px;
-      background: url('play-button.png') no-repeat center center;
-      background-size: contain;
-    }
-    
-    @media (min-width: 1024px) {
-      .videos-container {
-        justify-content: space-between;
-      }
-    }
-
-    @media (max-width: 1023px) {
-      .videos-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .video {
-        max-width: 45%;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .video {
-        max-width: 90%;
-      }
-    }
   </style>
   <script>
     function redirectToLucasMontano(url) {
       window.open(url, '_blank');
     }
-
-    function loadVideos() {
-      const links = [
-        '/watch?v=ZbhcFLqt5wI',
-        '/watch?v=jouOvuRkOjY',
-        '/watch?v=yz3BcL5oQ70',
-        '/watch?v=EQf1UtuDi9o',
-        '/watch?v=A1NjONzcHrY',
-        '/watch?v=eJZV5W4_gkY',
-        '/watch?v=g45qrU297cg',
-        '/watch?v=NttrF2T4BSA',
-        '/watch?v=V9B6FMRs0ck',
-        '/watch?v=wRzvI8xWC9s',
-        '/watch?v=G5EPi8DQahI',
-        '/watch?v=fiFcC54aMaA',
-        '/watch?v=KXCNH9Wj6Fg',
-        '/watch?v=ijnJg0Za2UY',
-        '/watch?v=JB5trigCSVE',
-        '/watch?v=ANeEikfX5go',
-        '/watch?v=BO7QW5-etZ4',
-        '/watch?v=OILOgpjsY-Q',
-        '/watch?v=_tAy-NNkHuo',
-        '/watch?v=Is0GVsNfDHo',
-        '/watch?v=Oz21sD9nrHk',
-        '/watch?v=fyXfFnHnl1Y',
-        '/watch?v=odMkcZ_t4PY',
-        '/watch?v=teU_RL7QOT4',
-        '/watch?v=NnekO9pdJaw',
-        '/watch?v=5jPam2LV0ME',
-        '/watch?v=e4x4IITQvak',
-        '/watch?v=arG8jkRHwsY',
-        '/watch?v=Y2WfzFozf8M',
-        '/watch?v=15fBdpMWPrE'
-      ];
-
-      const videosContainer = document.querySelector('.videos-container');
-      const selectedLinks = links.sort(() => 0.5 - Math.random()).slice(0, 9); // Select 9 random videos
-
-      selectedLinks.forEach(link => {
-        const videoUrl = `https://www.youtube.com${link}`;
-        const videoElement = document.createElement('div');
-        videoElement.classList.add('video');
-        videoElement.innerHTML = `
-          <img src="https://img.youtube.com/vi/${link.split('=')[1]}/maxresdefault.jpg" alt="Video Thumbnail" loading="lazy">
-          <div class="play-button"></div>
-          <div class="video-title">Video Title</div>
-        `;
-        videoElement.addEventListener('click', () => redirectToLucasMontano(videoUrl));
-        videosContainer.appendChild(videoElement);
-      });
-    }
-
-    document.addEventListener("DOMContentLoaded", loadVideos);
   </script>
 </head>
 
 <body>  
   <div class="container" id="content"></div>
-  <div class="videos-container"></div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       if (typeof marked === "function") {
