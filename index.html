@@ -1,126 +1,771 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Lucas Montano</title>
-  <meta name="google-adsense-account" content="ca-pub-9246265106106312">
-  <link
-      rel="icon"
-      href="https://github.com/lucasmontano.png"
-      type="image/x-icon"
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      id="meta-description"
+      name="description"
+      content="Lucas Montano is a Brazilian software engineer, content creator, speaker, and entrepreneur who helps developers and entrepreneurs navigate complexity, adopt AI, and grow professionally."
     />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9246265106106312"
-     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.css" rel="stylesheet" />
-  <style>
-    body {
-      background-color: #0D1117;
-      color: #FFFFFF;
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-      margin: 0;
-      padding: 0;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      word-wrap: break-word;
-    }
-    @media only screen and (max-width: 1024px) {
+    <meta name="theme-color" content="#ffffff" />
+    <title>Lucas Montano — Builder &amp; educator</title>
+    <link rel="icon" href="https://github.com/lucasmontano.png" type="image/png" />
+    <style>
+      :root {
+        --paper: #ffffff;
+        --ink: #111111;
+        --soft-ink: #5c5c5c;
+        --rule: #161616;
+        --quiet-rule: #d8d8d8;
+        --page-gutter: clamp(1.25rem, 4vw, 4.5rem);
+        --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --serif: Iowan Old Style, Baskerville, "Times New Roman", Times, serif;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
       body {
-        font-size: 2.5rem;
+        margin: 0;
+        min-width: 320px;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
       }
-    }
-    .container {
-      background-color: #0D1117;
-      margin: 5% auto;
-      padding: 40px;
-      border-radius: 8px;
-      width: 80%;
-      overflow-y: auto;          
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: #FFFFFF;
-      margin-bottom: 0.5em;
-    }
 
-    p, ol, ul {
-      margin-bottom: 1em;
-      color: #FFFFFF;
-    }
-
-    code {
-      background-color: #0d1117;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 2px 6px;
-      color: #FFFFFF;
-      font-size: 1rem;
-    }
-
-    pre {
-      background-color: #0d1117;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 10px;
-      color: #8b949e;
-      overflow-x: auto;
-      font-size: 14px;
-    }
-
-    blockquote {
-      border-left: 4px solid #30363d;
-      padding-left: 15px;
-      color: #c9d1d9;
-    }
-
-    a {
-      color: #1f6feb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-  </style>
-  <script>
-    function redirectToLucasMontano(url) {
-      window.open(url, '_blank');
-    }
-  </script>
-</head>
-
-<body>  
-  <div class="container" id="content"></div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (typeof marked === "function") {
-        fetch('https://raw.githubusercontent.com/lucasmontano/lucasmontano.com/main/README.md')
-          .then(response => response.text())
-          .then(data => {
-            const readmeHtml = marked(data);
-            const container = document.getElementById('content');
-            container.innerHTML = readmeHtml;
-            Prism.highlightAllUnder(container);
-          })
-          .catch(error => console.error("Oops:", error));
+      a {
+        color: inherit;
+        text-underline-offset: 0.16em;
+        text-decoration-thickness: 1px;
       }
-    });
-    window.addEventListener("scroll", function () {
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        document.getElementById("clickme").style.display = "block";
-        document.getElementById("clickme").classList.add("animate-clickme");
+
+      a:hover { text-decoration-thickness: 2px; }
+
+      a:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 4px;
       }
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-      const clickmeImage = document.getElementById("clickme");
-      clickmeImage.addEventListener("click", () => redirectToLucasMontano("https://www.youtube.com/@LucasMontano"));
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
 
-  <img id="clickme" src="clickme.png"
-    style="display:none;cursor:pointer;position:fixed;bottom:0px;right:0px;width:100px;height:100px;z-index:999;" />
-</body>
+      .site-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 1.25rem var(--page-gutter) 1.1rem;
+        border-bottom: 1px solid var(--rule);
+      }
 
+      .wordmark,
+      .header-note,
+      .section-index,
+      .eyebrow,
+      .product-kicker,
+      .footer-note,
+      .portrait figcaption,
+      .talk-meta {
+        font-family: var(--mono);
+        font-size: 0.66rem;
+        font-weight: 500;
+        letter-spacing: 0.065em;
+        line-height: 1.35;
+        text-transform: uppercase;
+      }
+
+      .wordmark {
+        font-size: 0.72rem;
+        letter-spacing: 0.11em;
+        text-decoration: none;
+      }
+
+      .header-note {
+        color: var(--soft-ink);
+        text-align: right;
+      }
+
+      .header-tools {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .language-picker {
+        display: flex;
+        align-items: center;
+      }
+
+      .language-picker select {
+        min-height: 2rem;
+        padding: 0.35rem 1.65rem 0.35rem 0.55rem;
+        color: var(--ink);
+        appearance: none;
+        border: 1px solid var(--ink);
+        border-radius: 0;
+        background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='m1 1 4 4 4-4' fill='none' stroke='%23111' stroke-width='1.25'/%3E%3C/svg%3E") no-repeat right 0.55rem center;
+        font-family: var(--mono);
+        font-size: 0.66rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        line-height: 1;
+        cursor: pointer;
+      }
+
+      .language-picker select:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 3px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      main { overflow: hidden; }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.12fr) minmax(15rem, 0.88fr);
+        min-height: min(48rem, calc(100svh - 3.6rem));
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: clamp(2rem, 6vw, 6rem) var(--page-gutter) clamp(2rem, 4vw, 4rem);
+      }
+
+      .eyebrow { margin: 0; }
+
+      h1,
+      h2,
+      p { margin-top: 0; }
+
+      h1 {
+        max-width: 9ch;
+        margin: clamp(3rem, 10vw, 8rem) 0 clamp(3rem, 8vw, 6.5rem);
+        font-size: clamp(4.5rem, 11.1vw, 11.5rem);
+        font-weight: 400;
+        letter-spacing: -0.085em;
+        line-height: 0.78;
+      }
+
+      .hero-statement {
+        max-width: 36rem;
+        margin-bottom: 0;
+        font-family: var(--serif);
+        font-size: clamp(1.15rem, 1.65vw, 1.55rem);
+        line-height: 1.25;
+      }
+
+      .portrait {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        background: #e5e5e5;
+        border-left: 1px solid var(--rule);
+        overflow: hidden;
+      }
+
+      .portrait::after {
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+        background-size: 100% 4px;
+        content: "";
+        pointer-events: none;
+        mix-blend-mode: soft-light;
+      }
+
+      .portrait img {
+        width: 100%;
+        height: 100%;
+        min-height: 26rem;
+        object-fit: cover;
+        object-position: center;
+        filter: grayscale(1) contrast(1.25) brightness(1.05);
+        mix-blend-mode: multiply;
+      }
+
+      .portrait figcaption {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.9rem 1rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.84);
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: minmax(9rem, 0.33fr) minmax(0, 1fr);
+        gap: clamp(1.5rem, 5vw, 7rem);
+        padding: clamp(4rem, 10vw, 10rem) var(--page-gutter);
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .section-index {
+        margin: 0;
+        color: var(--soft-ink);
+      }
+
+      .section-body { min-width: 0; }
+
+      h2 {
+        max-width: 16ch;
+        margin-bottom: clamp(2.25rem, 5vw, 4.75rem);
+        font-family: var(--serif);
+        font-size: clamp(2.3rem, 5.1vw, 5.7rem);
+        font-weight: 400;
+        letter-spacing: -0.06em;
+        line-height: 0.94;
+      }
+
+      .about-copy {
+        display: grid;
+        max-width: 63rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(1.5rem, 5vw, 5.5rem);
+      }
+
+      .about-copy p,
+      .talk-copy {
+        margin-bottom: 0;
+        font-size: clamp(1.05rem, 1.65vw, 1.42rem);
+        line-height: 1.45;
+      }
+
+      .products { padding-bottom: 0; }
+
+      .products h2 { margin-bottom: clamp(2.25rem, 5vw, 4.75rem); }
+
+      .product-list {
+        margin: 0 calc(var(--page-gutter) * -1);
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--rule);
+      }
+
+      .product-list li { border-bottom: 1px solid var(--rule); }
+
+      .product-link {
+        display: grid;
+        grid-template-columns: minmax(4.5rem, 0.25fr) minmax(0, 1fr) minmax(14rem, 0.75fr) auto;
+        gap: 1.25rem;
+        align-items: baseline;
+        padding: clamp(1.5rem, 3.2vw, 3.2rem) var(--page-gutter);
+        text-decoration: none;
+        transition: background-color 170ms ease, color 170ms ease;
+      }
+
+      .product-link:hover,
+      .product-link:focus-visible {
+        color: var(--paper);
+        background: var(--ink);
+      }
+
+      .product-link:focus-visible { outline-offset: -5px; }
+
+      .product-kicker { color: var(--soft-ink); }
+
+      .product-link:hover .product-kicker,
+      .product-link:focus-visible .product-kicker { color: inherit; }
+
+      .product-name {
+        font-family: var(--serif);
+        font-size: clamp(1.75rem, 3.5vw, 4rem);
+        letter-spacing: -0.055em;
+        line-height: 0.92;
+      }
+
+      .product-description {
+        max-width: 25rem;
+        font-size: 0.95rem;
+        line-height: 1.35;
+      }
+
+      .arrow {
+        font-size: 1.4rem;
+        line-height: 1;
+        transition: transform 170ms ease;
+      }
+
+      .product-link:hover .arrow,
+      .product-link:focus-visible .arrow { transform: translateX(0.35rem); }
+
+      .presence-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(16rem, 0.75fr);
+        gap: clamp(3rem, 10vw, 11rem);
+        align-items: start;
+      }
+
+      .talk-entry + .talk-entry {
+        margin-top: 2.25rem;
+        padding-top: 2.25rem;
+        border-top: 1px solid var(--quiet-rule);
+      }
+
+      .talk-meta {
+        display: block;
+        margin-bottom: 0.8rem;
+        color: var(--soft-ink);
+      }
+
+      .contact-panel {
+        padding: clamp(1.4rem, 3vw, 2.4rem);
+        border: 1px solid var(--rule);
+      }
+
+      .contact-panel p {
+        max-width: 20rem;
+        margin-bottom: 2rem;
+        font-family: var(--serif);
+        font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+        letter-spacing: -0.045em;
+        line-height: 1.03;
+      }
+
+      .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .contact-link::after { content: "↗"; font-size: 1.1rem; }
+
+      .site-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 1.25rem var(--page-gutter);
+      }
+
+      .footer-note { margin: 0; color: var(--soft-ink); }
+
+      .back-top {
+        font-family: var(--mono);
+        font-size: 0.66rem;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 720px) {
+        .site-header { align-items: flex-start; }
+
+        .header-note { max-width: 11rem; }
+
+        .header-tools { gap: 0.55rem; }
+
+        .language-picker select { padding-right: 1.45rem; }
+
+        .hero {
+          display: flex;
+          flex-direction: column;
+          min-height: 0;
+        }
+
+        .hero-copy { min-height: 36rem; }
+
+        h1 { margin: 4.5rem 0; }
+
+        .portrait {
+          min-height: 27rem;
+          border-top: 1px solid var(--rule);
+          border-left: 0;
+        }
+
+        .portrait img { min-height: 27rem; }
+
+        .section {
+          display: block;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+
+        .section-index { margin-bottom: 3.5rem; }
+
+        h2 { margin-bottom: 2.5rem; }
+
+        .about-copy,
+        .presence-grid { grid-template-columns: 1fr; }
+
+        .products { padding-bottom: 0; }
+
+        .product-link {
+          grid-template-columns: 1fr auto;
+          gap: 0.75rem 1rem;
+        }
+
+        .product-kicker { grid-column: 1 / -1; }
+
+        .product-description { grid-column: 1 / 2; }
+
+        .arrow { grid-column: 2; grid-row: 2 / span 2; align-self: center; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .product-link,
+        .arrow { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Lucas Montano, back to top" data-i18n-aria-label="wordmark_aria">Lucas Montano</a>
+      <div class="header-tools">
+        <span class="header-note" data-i18n-html="header_note">Software engineer<br />&amp; serial entrepreneur</span>
+        <label class="language-picker">
+          <span class="sr-only" data-i18n="language_label">Choose language</span>
+          <select id="language-picker" aria-label="Choose language" data-i18n-aria-label="language_label">
+            <option value="en">EN</option>
+            <option value="pt-BR">PT-BR</option>
+            <option value="nl">NL</option>
+            <option value="es">ES</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="profile">Profile / 2026</p>
+          <h1 id="page-title">Lucas<br />Montano</h1>
+          <p class="hero-statement" data-i18n="hero_statement">Lucas Montano is a Brazilian software engineer, content creator, speaker, and entrepreneur. He helps developers and entrepreneurs navigate complex problems, adopt AI, and grow professionally.</p>
+        </div>
+
+        <figure class="portrait">
+          <img src="portrait-lucas-montano.png" alt="Portrait of Lucas Montano" data-i18n-alt="portrait_alt" />
+          <figcaption><span>Lucas Montano</span><span>0001 / B&amp;W</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="section" aria-labelledby="about-title">
+        <p class="section-index" data-i18n="about_index">01 / About</p>
+        <div class="section-body">
+          <h2 id="about-title" data-i18n="about_title">Engineering, education &amp; entrepreneurship.</h2>
+          <div class="about-copy">
+            <p data-i18n="about_copy_one">Lucas began programming around age 12 and moved into mobile engineering. In 2010, he launched Finanças Pessoais, an Android app that surpassed one million downloads.</p>
+            <p data-i18n="about_copy_two">Today, his YouTube channel reaches more than 380,000 developers with tutorials, system design discussions, AI, and career insight for programmers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" aria-labelledby="products-title">
+        <p class="section-index" data-i18n="products_index">02 / Products</p>
+        <div class="section-body">
+          <h2 id="products-title" data-i18n-html="products_title">Active<br />Projects.</h2>
+          <ul class="product-list">
+            <li>
+              <a class="product-link" href="https://stupidbutton.club" target="_blank" rel="noreferrer">
+                <span class="product-kicker" data-i18n="stupid_kicker">01 / Club</span>
+                <span class="product-name">Stupid Button Club</span>
+                <span class="product-description" data-i18n="stupid_description">A developer community with 1:1 mentorship, an active Discord, AI-pipeline training, Perssua Premium, and in-person events.</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a class="product-link" href="https://perssua.com" target="_blank" rel="noreferrer">
+                <span class="product-kicker" data-i18n="perssua_kicker">02 / Writing</span>
+                <span class="product-name">Perssua</span>
+                <span class="product-description" data-i18n="perssua_description">An AI meeting copilot for live answers, translation, transcription, and notes.</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a class="product-link" href="https://systemdesignarena.com" target="_blank" rel="noreferrer">
+                <span class="product-kicker" data-i18n="arena_kicker">03 / Practice</span>
+                <span class="product-name">System Design Arena</span>
+                <span class="product-description" data-i18n="arena_description">A dedicated practice space for system design, architectural trade-offs, and engineering judgment.</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a class="product-link" href="https://the-bible.app/" target="_blank" rel="noreferrer">
+                <span class="product-kicker" data-i18n="bible_kicker">04 / Stories</span>
+                <span class="product-name">The Bible App</span>
+                <span class="product-description" data-i18n="bible_description">25 Bible stories in casual Brazilian Portuguese, with three narrative styles and natural audio.</span>
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="presence-title">
+        <p class="section-index" data-i18n="presence_index">03 / Presence</p>
+        <div class="section-body">
+          <h2 id="presence-title" data-i18n-html="presence_title">Events, talks<br />&amp; good questions.</h2>
+          <div class="presence-grid">
+            <div>
+              <article class="talk-entry">
+                <span class="talk-meta" data-i18n="events_label">Events</span>
+                <p class="talk-copy" data-i18n="events_copy">Lucas joins conferences, communities, classrooms, and company teams where people are serious about the craft of software.</p>
+              </article>
+              <article class="talk-entry">
+                <span class="talk-meta" data-i18n="talks_label">Talks</span>
+                <p class="talk-copy" data-i18n="talks_copy">His talks bring a practical perspective to software engineering, careers, and artificial intelligence.</p>
+              </article>
+            </div>
+            <aside class="contact-panel" aria-label="Commercial contact" data-i18n-aria-label="contact_aria">
+              <p data-i18n="contact_copy">Have an event, a talk, or an idea worth discussing?</p>
+              <a class="contact-link" href="mailto:comercial@lucasmontano.com" data-i18n="contact_link">Write to comercial@lucasmontano.com</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-note">© <span id="year">2026</span> Lucas Montano</p>
+      <a class="back-top" href="#top" data-i18n="back_to_top">Back to top ↑</a>
+    </footer>
+
+    <script>
+      const translations = {
+        en: {
+          document_title: "Lucas Montano — Builder & educator",
+          description: "Lucas Montano is a Brazilian software engineer, content creator, speaker, and entrepreneur who helps developers and entrepreneurs navigate complexity, adopt AI, and grow professionally.",
+          wordmark_aria: "Lucas Montano, back to top",
+          language_label: "Choose language",
+          header_note: "Software engineer<br>&amp; serial entrepreneur",
+          profile: "Profile / 2026",
+          hero_statement: "Lucas Montano is a Brazilian software engineer, content creator, speaker, and entrepreneur. He helps developers and entrepreneurs navigate complex problems, adopt AI, and grow professionally.",
+          portrait_alt: "Portrait of Lucas Montano",
+          about_index: "01 / About",
+          about_title: "Engineering, education & entrepreneurship.",
+          about_copy_one: "Lucas began programming around age 12 and moved into mobile engineering. In 2010, he launched Finanças Pessoais, an Android app that surpassed one million downloads.",
+          about_copy_two: "Today, his YouTube channel reaches more than 380,000 developers with tutorials, system design discussions, AI, and career insight for programmers.",
+          products_index: "02 / Products",
+          products_title: "Active<br>Projects.",
+          stupid_kicker: "01 / Club",
+          stupid_description: "A developer community with 1:1 mentorship, an active Discord, AI-pipeline training, Perssua Premium, and in-person events.",
+          perssua_kicker: "02 / Writing",
+          perssua_description: "An AI meeting copilot for live answers, translation, transcription, and notes.",
+          arena_kicker: "03 / Practice",
+          arena_description: "A dedicated practice space for system design, architectural trade-offs, and engineering judgment.",
+          bible_kicker: "04 / Stories",
+          bible_description: "25 Bible stories in casual Brazilian Portuguese, with three narrative styles and natural audio.",
+          presence_index: "03 / Presence",
+          presence_title: "Events, talks<br>&amp; good questions.",
+          events_label: "Events",
+          events_copy: "Lucas joins conferences, communities, classrooms, and company teams where people are serious about the craft of software.",
+          talks_label: "Talks",
+          talks_copy: "His talks bring a practical perspective to software engineering, careers, and artificial intelligence.",
+          contact_aria: "Commercial contact",
+          contact_copy: "Have an event, a talk, or an idea worth discussing?",
+          contact_link: "Write to comercial@lucasmontano.com",
+          back_to_top: "Back to top ↑"
+        },
+        "pt-BR": {
+          document_title: "Lucas Montano — Construtor e educador",
+          description: "Lucas Montano é engenheiro de software brasileiro, criador de conteúdo, palestrante e empreendedor. Ajuda programadores e empreendedores a navegar por problemas complexos, adotar IA e crescer profissionalmente.",
+          wordmark_aria: "Lucas Montano, voltar ao topo",
+          language_label: "Escolher idioma",
+          header_note: "Engenheiro de software<br>&amp; empreendedor serial",
+          profile: "Perfil / 2026",
+          hero_statement: "Lucas Montano é engenheiro de software brasileiro, criador de conteúdo, palestrante e empreendedor. Ajuda programadores e empreendedores a navegar por problemas complexos, adotar IA e crescer profissionalmente.",
+          portrait_alt: "Retrato de Lucas Montano",
+          about_index: "01 / Sobre",
+          about_title: "Engenharia, educação & empreendedorismo.",
+          about_copy_one: "Lucas começou a programar por volta dos 12 anos e seguiu para a engenharia mobile. Em 2010, lançou Finanças Pessoais, aplicativo Android que ultrapassou um milhão de downloads.",
+          about_copy_two: "Hoje, seu canal no YouTube alcança mais de 380 mil desenvolvedores com tutoriais, discussões de system design, IA e orientação de carreira para programadores.",
+          products_index: "02 / Produtos",
+          products_title: "Projetos<br>ativos.",
+          stupid_kicker: "01 / Clube",
+          stupid_description: "Uma comunidade para desenvolvedores com mentoria 1:1, Discord, treinamentos de IA, Perssua Premium e encontros presenciais.",
+          perssua_kicker: "02 / Escrita",
+          perssua_description: "Um copiloto de IA para reuniões: respostas ao vivo, tradução, transcrição e notas.",
+          arena_kicker: "03 / Prática",
+          arena_description: "Um espaço dedicado para praticar system design, trade-offs de arquitetura e julgamento de engenharia.",
+          bible_kicker: "04 / Histórias",
+          bible_description: "25 histórias da Bíblia em português brasileiro casual, com três estilos de narrativa e áudio natural.",
+          presence_index: "03 / Presença",
+          presence_title: "Eventos, palestras<br>&amp; boas perguntas.",
+          events_label: "Eventos",
+          events_copy: "Lucas participa de conferências, comunidades, salas de aula e times onde as pessoas levam a sério o ofício de criar software.",
+          talks_label: "Palestras",
+          talks_copy: "Suas palestras trazem uma perspectiva prática sobre engenharia de software, carreira e inteligência artificial.",
+          contact_aria: "Contato comercial",
+          contact_copy: "Tem um evento, uma palestra ou uma ideia que vale a pena conversar?",
+          contact_link: "Fale com comercial@lucasmontano.com",
+          back_to_top: "Voltar ao topo ↑"
+        },
+        nl: {
+          document_title: "Lucas Montano — Bouwer en docent",
+          description: "Lucas Montano is een Braziliaanse software engineer, contentmaker, spreker en ondernemer die developers en ondernemers helpt complexe problemen te doorgronden, AI toe te passen en professioneel te groeien.",
+          wordmark_aria: "Lucas Montano, terug naar boven",
+          language_label: "Kies taal",
+          header_note: "Software engineer<br>&amp; serieondernemer",
+          profile: "Profiel / 2026",
+          hero_statement: "Lucas Montano is een Braziliaanse software engineer, contentmaker, spreker en ondernemer. Hij helpt developers en ondernemers complexe problemen te doorgronden, AI toe te passen en professioneel te groeien.",
+          portrait_alt: "Portret van Lucas Montano",
+          about_index: "01 / Over",
+          about_title: "Engineering, educatie & ondernemerschap.",
+          about_copy_one: "Lucas begon rond zijn twaalfde met programmeren en stapte later over naar mobile engineering. In 2010 bracht hij Finanças Pessoais uit, een Android-app met meer dan een miljoen downloads.",
+          about_copy_two: "Zijn YouTube-kanaal bereikt nu meer dan 380.000 developers met tutorials, gesprekken over system design, AI en loopbaanadvies voor programmeurs.",
+          products_index: "02 / Producten",
+          products_title: "Actieve<br>projecten.",
+          stupid_kicker: "01 / Club",
+          stupid_description: "Een developercommunity met 1-op-1 mentorship, Discord, AI-training, Perssua Premium en live bijeenkomsten.",
+          perssua_kicker: "02 / Schrijven",
+          perssua_description: "Een AI-copilot voor meetings met live antwoorden, vertaling, transcriptie en notities.",
+          arena_kicker: "03 / Oefenen",
+          arena_description: "Een speciale oefenplek voor system design, architectuurafwegingen en technisch beoordelingsvermogen.",
+          bible_kicker: "04 / Verhalen",
+          bible_description: "25 Bijbelverhalen in informeel Braziliaans Portugees, met drie vertelstijlen en natuurlijk klinkende audio.",
+          presence_index: "03 / Aanwezigheid",
+          presence_title: "Evenementen, lezingen<br>&amp; goede vragen.",
+          events_label: "Evenementen",
+          events_copy: "Lucas sluit aan bij conferenties, communities, klaslokalen en bedrijfsteams waar mensen het vak van software serieus nemen.",
+          talks_label: "Lezingen",
+          talks_copy: "Zijn lezingen bieden een praktisch perspectief op software engineering, carrière en kunstmatige intelligentie.",
+          contact_aria: "Commercieel contact",
+          contact_copy: "Heb je een evenement, een lezing of een idee dat het bespreken waard is?",
+          contact_link: "Schrijf naar comercial@lucasmontano.com",
+          back_to_top: "Terug naar boven ↑"
+        },
+        es: {
+          document_title: "Lucas Montano — Constructor y educador",
+          description: "Lucas Montano es un ingeniero de software brasileño, creador de contenido, conferencista y emprendedor que ayuda a desarrolladores y emprendedores a abordar problemas complejos, adoptar la IA y crecer profesionalmente.",
+          wordmark_aria: "Lucas Montano, volver arriba",
+          language_label: "Elegir idioma",
+          header_note: "Ingeniero de software<br>&amp; emprendedor serial",
+          profile: "Perfil / 2026",
+          hero_statement: "Lucas Montano es un ingeniero de software brasileño, creador de contenido, conferencista y emprendedor. Ayuda a desarrolladores y emprendedores a abordar problemas complejos, adoptar la IA y crecer profesionalmente.",
+          portrait_alt: "Retrato de Lucas Montano",
+          about_index: "01 / Acerca de",
+          about_title: "Ingeniería, educación & emprendimiento.",
+          about_copy_one: "Lucas empezó a programar alrededor de los 12 años y más tarde se dedicó a la ingeniería móvil. En 2010 lanzó Finanças Pessoais, una app de Android que superó un millón de descargas.",
+          about_copy_two: "Hoy, su canal de YouTube llega a más de 380.000 desarrolladores con tutoriales, conversaciones sobre system design, IA y consejos de carrera para programadores.",
+          products_index: "02 / Productos",
+          products_title: "Proyectos<br>activos.",
+          stupid_kicker: "01 / Club",
+          stupid_description: "Una comunidad para desarrolladores con mentoría 1:1, Discord, formación en IA, Perssua Premium y encuentros presenciales.",
+          perssua_kicker: "02 / Escritura",
+          perssua_description: "Un copiloto de IA para reuniones con respuestas en vivo, traducción, transcripción y notas.",
+          arena_kicker: "03 / Práctica",
+          arena_description: "Un espacio dedicado para practicar system design, decisiones de arquitectura y criterio de ingeniería.",
+          bible_kicker: "04 / Historias",
+          bible_description: "25 historias de la Biblia en portugués brasileño coloquial, con tres estilos narrativos y audio natural.",
+          presence_index: "03 / Presencia",
+          presence_title: "Eventos, charlas<br>&amp; buenas preguntas.",
+          events_label: "Eventos",
+          events_copy: "Lucas participa en conferencias, comunidades, aulas y equipos de empresa donde se toman en serio el oficio de crear software.",
+          talks_label: "Charlas",
+          talks_copy: "Sus charlas aportan una perspectiva práctica sobre ingeniería de software, carrera e inteligencia artificial.",
+          contact_aria: "Contacto comercial",
+          contact_copy: "¿Tienes un evento, una charla o una idea que vale la pena conversar?",
+          contact_link: "Escribe a comercial@lucasmontano.com",
+          back_to_top: "Volver arriba ↑"
+        }
+      };
+
+      const languagePicker = document.getElementById("language-picker");
+      const languageKeys = Object.keys(translations);
+
+      function validLanguage(value) {
+        return languageKeys.includes(value) ? value : null;
+      }
+
+      function preferredLanguage() {
+        const queryLanguage = validLanguage(new URLSearchParams(window.location.search).get("lang"));
+        if (queryLanguage) return queryLanguage;
+
+        try {
+          const savedLanguage = validLanguage(window.localStorage.getItem("lucas-language"));
+          if (savedLanguage) return savedLanguage;
+        } catch (error) {
+          // Local storage may be unavailable in private browsing contexts.
+        }
+
+        const browserLanguage = (navigator.languages || [navigator.language || "en"])
+          .map((language) => language.toLowerCase())
+          .find((language) => language.startsWith("pt") || language.startsWith("nl") || language.startsWith("es"));
+
+        if (browserLanguage?.startsWith("pt")) return "pt-BR";
+        if (browserLanguage?.startsWith("nl")) return "nl";
+        if (browserLanguage?.startsWith("es")) return "es";
+        return "en";
+      }
+
+      function applyLanguage(language, updateUrl) {
+        const activeLanguage = validLanguage(language) || "en";
+        const copy = translations[activeLanguage];
+
+        document.documentElement.lang = activeLanguage;
+        document.title = copy.document_title;
+        document.getElementById("meta-description").content = copy.description;
+        languagePicker.value = activeLanguage;
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          element.textContent = copy[element.dataset.i18n];
+        });
+
+        document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+          element.innerHTML = copy[element.dataset.i18nHtml];
+        });
+
+        document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+          element.alt = copy[element.dataset.i18nAlt];
+        });
+
+        document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+          element.setAttribute("aria-label", copy[element.dataset.i18nAriaLabel]);
+        });
+
+        try {
+          window.localStorage.setItem("lucas-language", activeLanguage);
+        } catch (error) {
+          // The page remains fully usable when storage is unavailable.
+        }
+
+        if (updateUrl) {
+          try {
+            const url = new URL(window.location.href);
+            if (activeLanguage === "en") {
+              url.searchParams.delete("lang");
+            } else {
+              url.searchParams.set("lang", activeLanguage);
+            }
+            window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+          } catch (error) {
+            // The selection still works if the host does not allow URL rewriting.
+          }
+        }
+      }
+
+      languagePicker.addEventListener("change", (event) => applyLanguage(event.target.value, true));
+      document.getElementById("year").textContent = new Date().getFullYear();
+      applyLanguage(preferredLanguage(), false);
+    </script>
+  </body>
 </html>
